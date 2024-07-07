@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 
-int Check(float Value, float MinValue, float MaxValue, char *ErrMsg)
-{
+int Check(float Value, float MinValue, float MaxValue, char *ErrMsg){
     char Ret = 0;
     if(!(Ret = ((Value >= MinValue) && (Value <= MaxValue)) ? 1: 0))
         printf("%s\n", ErrMsg);
